@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link rel="shortcut icon" href="images/favicon.ico" />
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+  	<link rel="stylesheet" href="/assets/css/thumbnails.css">
+  	<link rel="stylesheet" href="/assets/css/style_new.css">
+    <link rel="shortcut icon" href="/assets/images/site/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
 
-	<title>Quaternius - Patrons</title>
-	<meta name="description" content="Indie developer from Argentina">
 
-	<link href="style.css" rel="stylesheet">
-<script>
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/f9d695b775.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -18,521 +23,624 @@
   ga('create', 'UA-99971748-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+
+
+ $(document).ready(function(){
+ $('#search').keyup(function(){
+
+  // Search text
+  var text = $(this).val();
+
+  // Hide all content class element
+  $('.pack').hide();
+
+  // Search
+  $('.pack:contains("'+text+'")').closest('.pack').show();
+
+ //If the search bar gets emptied, show all packs
+ if(text == ''){
+       $('.pack').show();
+ }
+ });
+});
+
+//Case insensitive
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+  return function( elem ) {
+   return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+  };
+});
+
+function responsiveHamburger() {
+	var x = document.getElementById("navButtons-id");
+	if (x.className === "navButtons") {
+		x.className += " responsive";
+	} else {
+		x.className = "navButtons";
+	}
+}
+
+function setValue(tag) {
+
+			var text = document.getElementById("search").value;
+		$('.pack').hide();
+		$('.pack:contains("'+tag+'")').closest('.pack').show();
+
+	}
+
+	function showAll(){
+		 $('.pack').show();
+	}
+
+
+	</script>
+
+  <div class="container">
+
+      <header>
+			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
+     	<div class="nav-menu">
+						<div class="navButtons" id ="navButtons-id">
+               <button class="btn"   onClick="window.location='/index.html'"; ><i class="fas fa-chess-rook" ></i> Assets</button>
+              <button class="btn"  onClick="window.location='/portfolio.html'"; ><i class="fas fa-frog"></i> Portfolio</button>
+               <button class="btn"  onClick="window.location='/patrons.html'"; ><i class="fas fa-heart"></i> Patrons</button>
+
+							 </div>
+							 <button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><i class="fab fa-twitter-square"></i></button>
+			</div>
+            <a href="/index.html"><img src ="/assets/images/site/logo.png" class ="logo"/></a>
+</header>
+
+      <div id="patreonBanner">
+    <nav class="menu-text-center">
+        <a href="https://www.patreon.com/quaternius" style="text-decoration:none" target=blank><img src="/assets/images/site/PatreonBanner.png" /></a>
+
+    </nav>
+</div>
+
+
+  </div>
 </head>
+
 <body>
-<div class="container">
-	<header>
+  <div class="container">
 
 
 
-            <a href="index.html"><img src ="images/logo.png" class ="center"/></a>
-
-        <br />
-
-
-		<nav class="menu-text-center">
-			<ul>
-				<li><a href="index.html">Game Assets</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-
-                <li><a href="patrons.html">Patrons</a></li>
-              
-			</ul>
-		</nav>
-	</header>
-
-
-
-    <div class="menu-text-center">
-<a href="https://www.patreon.com/quaternius" style="text-decoration:none">
-
-<div id="patreonthing">
-<nav class="menu-text-center">
-
-<img src="images/become_a_patron.png" />
- <p>Support me so I can keep making these assets free for everyone. (and eating too!)</p>
-
-</nav>
+      <title>Quaternius • Patrons</title>
+<div class="PatreonText HighPoly">
+  Erik Horner |
+  Michelle Heng |
+  Oyvind Selbek |
+  <a href="https://twitter.com/canadaduane">Duane Johnson</a> |
+  <a href="https://twitter.com/ProAlphaBeta">Screaming Brain Studios</a> |
+  Nicolas Gauville |
+  FalcoDev |
+  Alex Hoffman |
+  Max  |
+  <a href="https://twitter.com/Cervator">Rasmus Praestholm</a> |
 </div>
-</a>
-<br>
-	    <h1><b>Thanks to my Patrons:</b></h1>
+<div class="PatreonText LowPoly">
+  Marco M |
+  Jean-Baptiste LEPESME |
+  Simon Atkey |
+  Jaden Swift |
+  Fenrirlaw  |
+  Mikel G |
+  spencer c |
+  Radek Hecl |
+  m2tt  |
+  Nak  |
+  Sergey  |
+  <a href="https://twitter.com/CitywarsNetwork">Citywars Savage</a> |
+  Jon Mayo |
+</div>
+<div class="PatreonText Cube">
+  Shawn Black |
+  James Macgill |
+  <a href="https://twitter.com/mccorkle">Mark McCorkle</a> |
+  Cona  |
+  swos |
+  Peter Ingulli |
+  Logan Michalicek |
+  Isekai  |
+  David Mydlarz |
+  Que Bon |
+  skaldarnar  |
+  Joseph Simpson |
+  Chris Ridenour |
+  Donald R Clark |
+  Sharp  |
+  Armando Vilchis |
+</div>
+<div class="PatreonText FaceEdgeVertex">
+  Rune Jorgensen |
+  drake bolden |
+  Bill Henry |
+  Random Indie Dev |
+  Meredith west |
+  George Elhabr |
+  Ieuan |
+  KuMa |
+  Arnis Lielturks |
+  Andrew Witt |
+  <a href="https://twitter.com/weirdbeardniz">WeirdBeard</a> |
+  J K |
+  Steven Skunberg |
+  Delan Allen |
+  Gerrard Jenner |
+  codegoose |
+  James BUMVDATL |
+  Spidey |
+  Ryan Gannon |
+  Bluey |
+  Ryan McJury |
+  Richard Wilderspin |
+  Alex Draper |
+  Justin Kyle Torres |
+  spaceleviathan |
+  Eric Telaak |
+  Michael Sara |
+  Vyacheslav Artemiev |
+  Logan |
+  Nestor Alonso |
+  <a href="https://twitter.com/jcatrambone">Joseph Catrambone</a> |
+  Billy Monks |
+  Alex Case |
+  Ithamar Adema |
+  Hein-Pieter van Braam |
+  <a href="https://twitter.com/JasonRTBond">Jason RT Bond</a> |
+  <a href="https://twitter.com/kgchinn">Kenny Chinn</a> |
+  Katja V. Madsen |
+  Anders Koch |
+  StealthyStilton |
+  Jamie Neal |
+  MoopiBoopi  |
+  Tony  |
+  Spiderfox |
+  Max Golden |
+  Rene Tailleur |
+  Daniel Prado |
+  Mitja Felicijan |
+  Cormac Dullaghan |
+  Ross Furmidge |
+  Robert Collier |
+  Marcus McNaught |
+  Albert Chastain |
+  VisionShift |
+  Austin xu |
+  <a href="https://twitter.com/ThePsyManic">Psymanic </a> |
+  Jukar90 |
+  Shane Nilsson |
+  joshua Bretag |
+  Kenneth Luplau-Brogger |
+  Luis Daher |
+  Sean Clements |
+  I.M.Suji |
+  Huseyin |
+  BirthdayGorilla |
+  Yalon Keret |
+  Silverchair |
+  Drew Keefer |
+  William Best |
+  T S  |
+  Jose Moreno |
+  hatmix |
+  Fredi Machado |
+  Vincent Freyer |
+  Bar Kolenbrener |
+  Bastien Goepfert |
+  <a href="https://twitter.com/orels1tips">orels1 </a> |
+  <a href="https://twitter.com/thebadrespawn">Bad Respawn</a> |
+  Andre Spears |
+  theGiallo |
+  Peter Ross |
+  Donte Jones |
+  Eike Decker |
+  LordFenix  |
+  <a href="https://twitter.com/Ziinloader">Retrochamber</a> |
+  Daniel Murdolo |
+  Ilias Doukas |
+  <a href="https://twitter.com/matthewtole">Matthew Tole</a> |
+  Matthew Stone |
+  Damien Salmon |
+  Matt K. |
+  Keith Thomas |
+  PJ Ahlberg |
+  <a href="https://twitter.com/meathelix">Rich Wilson</a> |
+  Knut Overbye |
+  Lee Berman |
+  Rokas Kupstys |
+  Jamison Messerschmitt |
+  dennimoto  |
+  <a href="https://twitter.com/mralex">Alex Roberts</a> |
+  Ryan Guthrie |
+  <a href="https://twitter.com/el_patrickL">Patrick Loughman</a> |
+  Andrea Cardenas-Roeder |
+  Boscayolo  |
+  Nicholas Main |
+  Christopher Ellis |
+  Megan Ginter |
+  Berkay Toku |
+  Jan Eisenhuth |
+  Chris Goddard |
+  Germano Assis |
+  Keir Rathbone |
+  rh jannini |
+  Gustavo Loureiro dos Reis |
+  Neil Allain |
+  <a href="https://twitter.com/denschub">Dennis Schubert</a> |
+  <a href="https://twitter.com/AKindlyOrc">JScott </a> |
+  <a href="https://twitter.com/heatblayze99">Heatblayze </a> |
+  Pawel Piecuch |
+  Karl Syvert Loland |
+  Daniel Cheney |
+  Ismail Kayapinar |
+  Danilo Colasso |
+  zirr  |
+  Autumn Somers |
+  Mikey Jensen |
+  Peardox  |
+  Stephen Dionola |
+  <a href="https://twitter.com/stbloomfield">Steven </a> |
+  <a href="https://twitter.com/kxhamdan">KxHDesign </a> |
+  <a href="https://twitter.com/kdarksnow">Darksnow Studios</a> |
+  Nebelung Games |
+  Jose Galarza |
+  Caner Ozdemir |
+  <a href="https://twitter.com/RegisFrey">Regis Frey</a> |
+  NoTuxNoBux |
+  Yazan Alahmad |
+  Matej Vrba |
+  Tuomo Erkinpera |
+  Per Byhring |
+  William |
+  Alex Apostu |
+  Jack Wang |
+  Marcel Kaufmann |
+  Simone Rossi |
+  Victor Dadaciu |
+  Erik Lundstrom |
+  Anton Konrad |
+  Ian Jolly |
+  Spam Me |
+  Kris Scott |
+  Jason Prickett |
+  Florastamine  |
+  Hugo Gonzalez |
+  M B |
+  Jordan Moore |
+  MattEqualsCoder |
+  Andy Nicolae |
+  Andrej Redeky |
+  <a href="https://twitter.com/odengarch">Odengarchitecture </a> |
+  <a href="https://twitter.com/dukemagus">Duke Magus</a> |
+  Ryan |
+  Louis Chering |
+  Jonathan Peck |
+  <a href="https://twitter.com/_mantis_">Derek Carroll</a> |
+  Damian Salwowski |
+  Alex Guthrie |
+  XiC |
+  ElectricHeels |
+  Nikhil Saraf |
+  Guilland Killian |
+  MinOx  |
+  Omar Khaled |
+  Thomas Gregg |
+  Rob Mahon |
+  Jan Krassnigg |
+  Chris  |
+  Robert McCormick |
+  Darius Meskauskas |
+  Morgan Kwok |
+  Matija Martinec |
+  0thescientist  |
+  Leonardo Andrade |
+  RampaceN |
+  Xavier Bergeron |
+  Aaron Wiggan |
+  Evan Schemm |
+  Jack Lewis |
+  <a href="https://twitter.com/clofresh">Carlo Cabanilla</a> |
+  Kerry  |
+  Brandon Kroes |
+  Robert Georges |
+  Vladislav Kantaev |
+  The Arcadian Panda |
+  Kyle Eichlin |
+  Alex |
+  JohnyBoro |
+  David Fischer |
+  Rimmon Trieu |
+  Rick Buczynski |
+  Felipe Bedoya |
+  Yvens Rebouças Serpa |
+  Pat |
+  Mitchell Manning |
+  Eric Cooper |
+  Kenny |
+  Johann Raoul |
+  Ronni-Volker Quiram |
+  Remi Telenczak |
+  dede  |
+  <a href="https://twitter.com/RealBaerthe">Baerthe</a> |
+  Zachary Alstadt |
+  Erik Navarro |
+  HighTale |
+  Donovan Hoyois |
+  Andy Simon |
+  Sergey Krutikov |
+  <a href="https://twitter.com/PixelZnimation">PixelZnimation</a> |
+  koba  |
+  Iwona |
+  Akazki |
+  KronisLV |
+  Bo Bo |
+  Mr.Jack |
+  Kyle K |
+  Jon |
+  Ayaz Sardar |
+  Revenge of the Gangrenous Finger |
+  Mike Gillissie |
+  Kelteseth  |
+  Enrique Zuniga |
+  Douglas Counts |
+  Koos  |
+  Heather Harvey |
+  Zac r |
+  Florian Muljono |
+  Samuel T |
+  John-Dan Key |
+  MysterieCatGames |
+  Vinicius Carli |
+  Samuel Couture |
+  BlueNotesBlues |
+  userName77  |
+  Mac  |
+  Tbuan |
+  Jason G George |
+  Andrew  |
+  derkumo  |
+  Ashwin Mods |
+  Blackjack |
+  Ramon Hamilton |
+  Joel Schumacher |
+  Jeffrey Arneson |
+  Daniel Herzberg |
+  Gabriele Marini |
+  Cho James |
+  Shahzaib Ansari |
+  Brandon Dines |
+  Joshua San Juan |
+  southpawgeek  |
+  Ruben Morgan |
+  Seth Towery |
+  Tom  |
+  Tank Thunderbird |
+  Rajay Kumar |
+  Liz Fiacco |
+  Eric Dalehite |
+  Nicolas Robertson |
+  Matthew MacKinnon |
+  Wolf Wilson |
+  Nicolas Goll-Perrier |
+  Rahul Archepally |
+  Ettienne Scharneck |
+  Jonathon Andres |
+  abhisek chatterjee |
+  Alexios Siozopoulos |
+  Chris  |
+  DoggyEars |
+  Charlie Sloan |
+  gumbyscout |
+  Walter Haynes |
+  Guilherme Tows |
+  Graham  |
+  <a href="https://twitter.com/jmickle_">jazz mickle</a> |
+  Christoffer Sundbom |
+  Dima Popov |
+  josh godin |
+  Kalle Soiha |
+  mauger  |
+  <a href="https://twitter.com/rexsmeal">Rex Smeal</a> |
+  Jose Javier Perez |
+  Jake McGinty |
+  Anthony Zulli |
+  Benoit Girard |
+  Zachary Fertig |
+  Konrad Krupa |
+  Ilya  |
+  Jasper Kalsbeek |
+  Hamish |
+  Michelle Sleeper |
+  Jonathan Tweedie |
+  Goathier  |
+  Kazatan Games |
+  Nick Johns |
+  natalia_you_rock |
+  Breckinridge Borges |
+  Simon Bergholtz |
+  Sam Farrington |
+  Lewis Pollard |
+  Nathan Geranis |
+  Dustin Milotte |
+  Shotts  |
+  Andrew |
+  Tokwa  |
+  John Powell |
+  Tyler Chrisawn |
+  Jefferson Nogueira de Oliveira |
+  Michiel Proce |
+  Skylar Cook |
+  Lucy Lavelle |
+  CherryChalk  |
+  Akash Harriram |
+  Austa Jiang |
+  Ben Sadler |
+  Stevey Jones |
+  Rick Easley |
+  Max Harrison |
+  Jacob Steele |
+  <a href="https://twitter.com/CarcinoGenital">Jaylon McElwain</a> |
+  Justin  |
+  Brad Sears |
+  Mike Esler |
+  Jason  |
+  Jedediah Steen |
+  Kurt M. Landre |
+  Brendan Hermann |
+  JA  |
+  <a href="https://twitter.com/brookmiles">Brook Miles</a> |
+  Rog Dolos |
+  <a href="https://twitter.com/Maetschl">Juli�n Arias Maetschl</a> |
+  Kevin Tung |
+  Nathan Best |
+  Ashley Smith |
+  jims  |
+  Zack Warnick |
+  Tyler Christenson |
+  Brad S |
+  Bee Sanz |
+  Andrew McCandless |
+  Diego Amor |
+  Luis Branco |
+  ben james |
+  Ninja Josh |
+  Hank Ditton |
+  Jens Dieskau |
+  Sean Rice |
+  Lua Consoni |
+  Luc Cedric R. |
+  Gideon Griebenow |
+  Adam  |
+  Daniel Buchwald |
+  <a href="https://twitter.com/GriotGames">Griot Games</a> |
+  Xenaros  |
+  Ethan Kemeny |
+  CoughE  |
+  Medra  |
+  Simon Breslav |
+  Kimbo  |
+  Marco Niemi |
+  BenSchraeder  |
+  Alex  |
+  Micah Smith |
+  Bruno Barbarroja |
+  alex  |
+  Brent Clarke |
+  Corn on the Cob Games |
+  Alexandre  |
+  John Lackey |
+  Chris  |
+  Bungo  |
+  Sascha Schneiders |
+  <a href="https://twitter.com/PianoRhythm_">Oak </a> |
+  ScanlineCat  |
+  thebacon  |
+  Ben Lutgens |
+  mins |
+  Tai Lam |
+  JessB  |
+  Chris Coslor |
+  <a href="https://twitter.com/mushdevstudio">Chris (mush dev studio)</a> |
+  SamLo  |
+  Marius Wolf |
+  Simon Nielsen |
+  Open Game Studio |
+  Petter Skult |
+  Loren Naegle |
+  Jordan Fickel |
+  Sebastian Swarney |
+  Benjamin Wade |
+  Dustin Nguyen |
+  Caroline |
+  Joshua Ennis |
+  Jay Mann |
+  JH |
+  Knut Sandsmark |
+  Cold Mug Studios |
+  Eric Fortner |
+  Yusuf  |
+  Peter  |
+  David Fernes |
+  e  |
+  Bradd  |
+  Ian Bradley |
+  Chris Kettle-Frisby |
+  Dean Farrington |
+  Ben Phelan |
+  Cnidarias  |
+  <a href="https://twitter.com/smallbigsquare">SmallBigSquare </a> |
+  Shaun Randall |
+  <a href="https://twitter.com/dannypage">Danny Page</a> |
+  Austin Oblenis |
+  Ext Pat |
+  Dave Bilotta |
+  J�rgen Lund |
+  Camilla Vallentin |
+  loldi  |
+  Yonas Sandbaek |
+  Jochem Cornelis |
+  Justin D'Amour |
+  <a href="https://twitter.com/DragonJudah">Cookie Dragon</a> |
+  Sri Sham Haran |
+  Joshua Claeys |
+  Rodrigo Barrientos |
+  Matthew Hoyt |
+  Raphael Goulais |
+  Poet on the Run |
+  <a href="https://twitter.com/dragonCASTjosh">Joshua Nuttall</a> |
+  Misha Serduk |
+  Setmaster  |
+  Vasily  |
+  Justin Langley |
+  Matthew Elliott |
+  Matt Williams |
+  Nrek  |
+  <a href="https://twitter.com/mircojanisch">Mirbro </a> |
+  Trevor Rau |
+  Ross McMonagle |
+  Kayse |
+  Jesse Brack |
+  Arto Lehesto |
+  Karl Goodloe |
+  David Redl |
+  Michael Evans |
+  thechris  |
+  <a href="https://twitter.com/theDumb12">whitegrimreaper </a> |
+  Clavus |
+  Brian Sandberg |
+  Zak Betz |
+  William Crawford |
+  Seve Ibarluzea |
+  <a href="https://twitter.com/ElliotExplicit">Elliot Gough</a> |
+  Joel Widmer |
+  Aku Viitanen |
+  ykw815  |
+  Michael Vieck |
+  Johan Heymans |
+  Alexey Nabrodov |
+  Charles Doty |
+  Heath Farrow |
+  Akshar Patel |
+  Alex K |
+  Darby Vranek |
+  <a href="https://twitter.com/evilseanbot">Seanna Musgrave</a> |
+  Milam Dobbins |
+  <a href="https://twitter.com/cultureulterior">Zagig Yragerne</a> |
+  <a href="https://twitter.com/t_machine_org">Adam Martin</a> |
 </div>
 
-   <div class="text-left">
+		<button class="btn patreonBtn"   onClick="window.open('https://www.patreon.com/quaternius','_blank')"; >Support on Patreon
+			  <i class="fas fa-heart"></i>
+		</button>
 
-<h1>
-FalcoDev |
-Jose Moreno |
-<a href="https://twitter.com/intothedeepgame">Dovydas </a> |
-Bastien Goepfert |
-Alex Hoffman |
-Adam K |
-Kazatan Games |
-Max  |
-Open Game Studio |
-Nak  |
-Shaun Randall |
-<a href="https://twitter.com/Cervator">Rasmus Praestholm</a>
-</h1>
-<h2>
-James McKay |
-Virtual Society .co |
-Enzo Tiezzi |
-Florian Muljono |
-Mike Gerweck |
-spencer c |
-Radek Hecl |
-m2tt  |
-David Dudson |
-Knut Øverbye |
-Sergey  |
-Jon Mayo |
-</h2>
-<h3>
-Jennifer Towne |
-Ben  |
-skaldarnar  |
-Joseph Simpson |
-Donald R Clark |
-Armando Vilchis |
-</h3>
-<h4>
-codegoose |
-Wapiti . |
-Re88eN . |
-Grant Nelson |
-Laidlaw |
-James Clement |
-Spidey |
-Ryan Gannon |
-ducc |
-Spoonie  |
-Ontario Britton |
-Bluey |
-Ryan McJury |
-Peter Corcoran |
-Alex Draper |
-Justin Kyle Torres |
-spaceleviathan  |
-Eric Telaak |
-Vyacheslav Artemiev |
-Logan Meers |
-Brad Davis |
-John G Gentzel |
-Néstor Alonso |
-Jesse Rosendahl |
-<a href="https://twitter.com/jcatrambone">Joseph Catrambone</a> |
-Billy Monks |
-Alex Case |
-Tommi Laukkanen |
-Chris Kettle-Frisby |
-Ithamar Adema |
-Hein-Pieter van Braam |
-<a href="https://twitter.com/JasonRTBond">Jason RT Bond</a> |
-<a href="https://twitter.com/kgchinn">Kenny Chinn</a> |
-Katja V. Madsen |
-</h4>
-<h5>
-Niclas Nystroem |
-Drew Keefer |
-Robert Bitschnau |
-William Best |
-T S  |
-hatmix |
-Fredi Machado |
-Kyle Gerbrandt |
-Vincent Freyer |
-Derek Stevens |
-Bar Kolenbrener |
-Elliz |
-<a href="https://twitter.com/orels1tips">orels1 </a> |
-<a href="https://twitter.com/thebadrespawn">Bad Respawn</a> |
-Andre Spears |
-theGiallo |
-Florian Bachmann |
-Peter Ross |
-Donte Jones |
-Eike Decker |
-LordFenix  |
-<a href="https://twitter.com/Ziinloader">Retrochamber</a> |
-Taylor Gerpheide |
-Richard Wilderspin |
-Daniel Murdolo |
-Ilias Doukas |
-<a href="https://twitter.com/matthewtole">Matthew Tole</a> |
-Matthew Stone |
-Damien Salmon |
-Matt K. |
-Keith Thomas |
-PJ Ahlberg |
-<a href="https://twitter.com/meathelix">Rich Wilson</a> |
-Lee Berman |
-Rokas Kupstys |
-Jamison Messerschmitt |
-dennimoto  |
-<a href="https://twitter.com/mralex">Alex Roberts</a> |
-Ryan Guthrie |
-<a href="https://twitter.com/el_patrickL">Patrick Loughman</a> |
-Andrea Cardenas-Roeder |
-Boscayolo  |
-Nicholas Main |
-Christopher Ellis |
-Megan Ginter |
-Berkay Toku |
-Jan Eisenhuth |
-Aaron Antone |
-Chris Goddard |
-Germano Assis |
-Keir Rathbone |
-rh jannini |
-Gustavo Loureiro dos Reis |
-Neil Allain |
-<a href="https://twitter.com/denschub">Dennis Schubert</a> |
-<a href="https://twitter.com/AKindlyOrc">JScott </a> |
-<a href="https://twitter.com/heatblayze99">Heatblayze </a> |
-Karl Syvert Løland |
-</h5>
-<h5>
-Jason Kelly |
-Chris McKinney |
-Mike Gillissie |
-Evgeniy |
-Kelteseth  |
-Yevhen Ishchenko |
-James Mearns |
-Peyton Grice |
-Enrique Zuniga |
-TehTurk  |
-Florin Bunau |
-Douglas Counts |
-David Zajicek |
-Koos  |
-Qmanana |
-Heather Harvey |
-Zac r |
-Stormware Studios |
-Samuel T |
-Kyle Stone |
-John-Dan Key |
-MysterieCatGames |
-V |
-Vinicius Carli |
-Samuel Couture |
-Anthony  |
-userName77  |
-Mac  |
-Tbuan |
-Jason G George |
-Andrew  |
-derkumo  |
-Adam Mikulis |
-Jandeilson Nascimento |
-Ashwin Mods |
-Blackjack |
-Ramon Hamilton |
-Joel Schumacher |
-Jeffrey Arneson |
-Jonathan Malave |
-Daniel Herzberg |
-Gabriele Marini |
-Cory Thompson |
-Cho James |
-Shahzaib Ansari |
-Xander Winans |
-Muhammed DOGRU |
-JessicaM |
-Lewis Cullerton  |
-Brandon Dines |
-Tobias Friberg |
-Joshua San Juan |
-southpawgeek  |
-Ruben Morgan |
-Seth Towery |
-Boris M |
-Tom  |
-Tank Thunderbird |
-Rajay Kumar |
-Liz Fiacco |
-Hao Cheng Tay |
-RexInMonte |
-Charles Griffin |
-Eric Dalehite |
-Nicolas Robertson |
-Matthew MacKinnon |
-Wolf Wilson |
-Nicholas  |
-Nicolas Goll-Perrier |
-Rahul Archepally |
-Softovick  |
-Ettienne Scharneck |
-Jonathon Andres |
-Phil Zan |
-abhisek chatterjee |
-Alexios Siozopoulos |
-Ruby Simpson |
-<a href="https://twitter.com/bram_says_hi">Space Monkey</a> |
-Chris  |
-DoggyEars |
-Charlie Sloan |
-Sebastien  |
-Simon |
-gumbyscout |
-yannis  |
-Walter Haynes |
-Allen Sparks |
-Guilherme Töws |
-Graham  |
-<a href="https://twitter.com/jmickle_">jazz mickle</a> |
-Lex |
-Christoffer Sundbom |
-Dima Popov |
-josh godin |
-Kalle Soiha |
-Elwood Finley |
-mauger  |
-<a href="https://twitter.com/rexsmeal">Rex Smeal</a> |
-Jose Javier Perez |
-Jake McGinty |
-Anthony Zulli |
-Benoit Girard |
-Zachary Fertig |
-Ferdinand Gygax |
-Konrad Krupa |
-Ilya  |
-Jasper Kalsbeek |
-Hamish |
-Michelle Sleeper |
-Jonathan Tweedie |
-Goathier  |
-Nick Johns |
-Charles Chamberlain |
-Viri  |
-Breckinridge Borges |
-Simon Bergholtz |
-Sam Farrington |
-Nathan Geranis |
-Dustin Milotte |
-Shotts  |
-Andrew  |
-Joshua Tobias Treudler |
-Tokwa  |
-John Powell |
-Tyler Chrisawn |
-Jefferson Nogueira de Oliveira |
-Michiel Proce |
-Skylar Cook |
-Bobap  |
-Lucy Lavelle |
-CherryChalk  |
-Akash Harriram |
-Robert Courto |
-Austa Jiang |
-Ben Sadler |
-Stevey Jones |
-Rick Easley |
-Jeremy Jones |
-Max Harrison |
-Jacob Steele |
-Hilze Vonck |
-<a href="https://twitter.com/CarcinoGenital">Jaylon McElwain</a> |
-Stipe Kukuruzovic |
-Acika Kovacevic |
-Justin  |
-Brad Sears |
-DerYoshed  |
-Mike Esler |
-Jason  |
-Jedediah Steen |
-Kurt M. Landré |
-Brendan Hermann |
-JA  |
-<a href="https://twitter.com/brookmiles">Brook Miles</a> |
-Rog Dolos |
-<a href="https://twitter.com/Maetschl">Julián </a> |
-Nathan Best |
-Ashley Smith |
-jims  |
-Zack Warnick |
-Tyler Christenson |
-Brad S |
-Blue Bubble Bee |
-Ran Levi |
-Chris Ridenour |
-Andrew McCandless |
-Rena Seow |
-Lydia McEwen |
-Yaroslav Bunyak |
-Vito  |
-Diego Amor |
-Luis Branco |
-ben james |
-Ninja Josh |
-Hank Ditton |
-Jens Dieskau |
-Sean Rice |
-Luã Consoni |
-Luc Cedric R. |
-Gideon Griebenow |
-Adam  |
-Colin Zelin |
-Daniel Buchwald |
-Nick  |
-kabucha  |
-<a href="https://twitter.com/GriotGames">Griot Games</a> |
-Pawel Bis |
-Chib Eppen |
-Xenaros  |
-PZsombor22  |
-Ethan Kemeny |
-CoughE  |
-Medra  |
-Simon Breslav |
-Paulo D'Andréa |
-Kimbo  |
-John Selig |
-Marco Niemi |
-Flinti  |
-BenSchraeder  |
-Alex  |
-Micah Smith |
-alex  |
-Brent Clarke |
-Ben Cusack |
-Corn on the Cob Games |
-Alexandre  |
-Euphoriaaa  |
-Chris  |
-Bungo  |
-Sascha Schneiders |
-Phyronnaz  |
-<a href="https://twitter.com/PianoRhythm_">Oak </a> |
-<a href="https://twitter.com/downwardviral">Sebastian Haley</a> |
-ScanlineCat  |
-thebacon  |
-Ben Lutgens |
-mins |
-Tai Lam |
-JessB  |
-Chris Coslor |
-<a href="https://twitter.com/mushdevstudio">Chris (mush dev studio)</a> |
-SamLo  |
-Frank Bruns |
-Petter Skult |
-Loren Naegle |
-Jordan Fickel |
-Sharp  |
-Sebastian Swarney |
-Benjamin Wade |
-Dustin Nguyen |
-Caroline |
-Joshua Ennis |
-Jay Mann |
-JH |
-Knut Sandsmark |
-Dom Harris |
-Cold Mug Studios |
-Eric Fortner |
-Yusuf  |
-Peter  |
-David Fernes |
-e  |
-Bradd  |
-Ian Bradley |
-Lord  |
-Dean Farrington |
-Ben Phelan |
-Benjámin Erdei |
-Cnidarias  |
-<a href="https://twitter.com/smallbigsquare">SmallBigSquare </a> |
-<a href="https://twitter.com/dannypage">Danny Page</a> |
-Austin Oblenis |
-Daniel Hansen |
-Dave Bilotta |
-Jørgen Lund |
-<a href="https://twitter.com/mrsigsegv">Mr. Sigsegv</a> |
-Camilla Vallentin |
-<a href="https://twitter.com/Matt_Tuttle">Matt Tuttle</a> |
-loldi  |
-Yonas Sandbæk |
-Jochem Cornelis |
-Justin D'Amour |
-<a href="https://twitter.com/DragonJudah">Cookie Dragon</a> |
-Sri Sham Haran |
-Joshua Claeys |
-Rodrigo Barrientos |
-Matthew Hoyt |
-Raphael Goulais |
-Poet on the Run |
-<a href="https://twitter.com/dragonCASTjosh">Joshua Nuttall</a> |
-Misha Serduk |
-Setmaster  |
-Vasily  |
-Justin Langley |
-Matt Williams |
-Nrek  |
-<a href="https://twitter.com/mircojanisch">Mirbro </a> |
-Trevor Rau |
-Kayse |
-Arto Lehestö |
-Karl Goodloe |
-David Redl |
-Michael Evans |
-thechris  |
-Thomas Smith |
-r-lyeh  |
-<a href="https://twitter.com/theDumb12">whitegrimreaper </a> |
-Clavus |
-Brian Sandberg |
-<a href="https://twitter.com/swiftcoder">Tristam MacDonald</a> |
-Zak Betz |
-William Crawford |
-Seve Ibarluzea |
-<a href="https://twitter.com/ElliotExplicit">Elliot Gough</a> |
-Jarod Wright |
-Andy Robert |
-Joel Widmer |
-ykw815  |
-Michael Vieck |
-Johan Heymans |
-Alexey Nabrodov |
-Logan Beaver |
-Charles Doty |
-Heath Farrow |
-Akshar Patel |
-Alex K |
-Darby Vranek |
-<a href="https://twitter.com/evilseanbot">Seanna Musgrave</a> |
-Milam Dobbins |
-<a href="https://twitter.com/cultureulterior">Zagig Yragerne</a> |
-Jay Stevens |
-<a href="https://twitter.com/t_machine_org">Adam Martin</a> |
-</h5>
-
-
-
-
-
-
-
-
-
-</div>
-
-     <br>
-
-<br>
-
-
-
-    <br />
-
-	<footer>
+      <footer>
         <a class="float-left" target="_blank" href="https://www.twitter.com/quaternius">	&copy; Quaternius</a>
         <a class="float-right" >laulhet@gmail.com</a>
-
 	</footer>
-</div>
+
+  </div>
 </body>
 </html>
