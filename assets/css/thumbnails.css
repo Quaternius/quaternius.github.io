@@ -117,7 +117,7 @@ font-weight: 470;
   padding-top:5px;
   padding-bottom:5px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
   .small {
     width: 100%;
     padding: 0px 15px 15px 0 ;
@@ -271,10 +271,11 @@ display: grid;
   background: #363636;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 0 0 0px 15px ;
-  padding-top:10px;
-  padding-left:13px;
+  padding-top:5px;
+  padding-right:3px;
+
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -499,7 +500,7 @@ padding:0 0.75rem;
 font-size:1.5rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 .hamburger{
   display: block;
   text-align: right;
