@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+  	<link rel="stylesheet" href="/assets/css/thumbnails.css">
+  	<link rel="stylesheet" href="/assets/css/style_new.css">
+    <link rel="shortcut icon" href="/assets/images/site/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+
+
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/f9d695b775.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99971748-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+ $(document).ready(function(){
+ $('#search').keyup(function(){
+
+  // Search text
+  var text = $(this).val();
+
+  // Hide all content class element
+  $('.pack').hide();
+
+  // Search
+  $('.pack:contains("'+text+'")').closest('.pack').show();
+
+ //If the search bar gets emptied, show all packs
+ if(text == ''){
+       $('.pack').show();
+ }
+ });
+});
+
+//Case insensitive
+$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+  return function( elem ) {
+   return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+  };
+});
+
+function responsiveHamburger() {
+	var x = document.getElementById("navButtons-id");
+	if (x.className === "navButtons") {
+		x.className += " responsive";
+	} else {
+		x.className = "navButtons";
+	}
+}
+
+function setValue(tag) {
+
+			var text = document.getElementById("search").value;
+		$('.pack').hide();
+		$('.pack:contains("'+tag+'")').closest('.pack').show();
+
+	}
+
+	function showAll(){
+		 $('.pack').show();
+	}
+
+
+	</script>
+
+  <div class="container">
+
+      <header>
+			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
+     	<div class="nav-menu">
+						<div class="navButtons" id ="navButtons-id">
+               <button class="btn"   onClick="window.location='/index.html'"; ><i class="fas fa-chess-rook" ></i> Assets</button>
+              <button class="btn"  onClick="window.location='/portfolio.html'"; ><i class="fas fa-frog"></i> Portfolio</button>
+               <button class="btn"  onClick="window.location='/patrons.html'"; ><i class="fas fa-heart"></i> Patrons</button>
+
+							 </div>
+							 <button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><i class="fab fa-twitter-square"></i></button>
+			</div>
+            <a href="/index.html"><img src ="/assets/images/site/logo.png" class ="logo"/></a>
+</header>
+
+      <div id="patreonBanner">
+    <nav class="menu-text-center">
+        <a href="https://www.patreon.com/quaternius" style="text-decoration:none" target=blank><img src="/assets/images/site/PatreonBanner.png" /></a>
+
+    </nav>
+</div>
+
+
+  </div>
+</head>
+
+<body>
+  <div class="container">
+
+
+
+      <title>Quaternius • Modular Dungeons Pack</title>
+
+<head>
+	<meta name="title" content="Quaternius • Modular Dungeons Pack"/>
+	<meta name="description" content="This pack includes a set of modular dungeon assets. All in FBX, OBJ and Blend formats, free to use in personal and commercial projects."/>
+
+	<meta name="twitter:image" content="/assets/images/fullres/updatedmodulardungeon.jpg">
+	<meta name="twitter:card" value="summary_large_image">
+	<meta property="twitter:title" content="Quaternius • Modular Dungeons Pack"/>
+	<meta property="twitter:description" content="This pack includes a set of modular dungeon assets. All in FBX, OBJ and Blend formats, free to use in personal and commercial projects."/>
+	<meta property="twitter:site" content="@Quaternius">
+
+
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://quaternius.com/packs/modulardungeon.html">
+	<meta property="og:site-name" content="Quaternius">
+	<meta property="og:title" content="Quaternius • Modular Dungeons Pack">
+	<meta property="og:description" content="This pack includes a set of modular dungeon assets. All in FBX, OBJ and Blend formats, free to use in personal and commercial projects.">
+	<meta property="og:image" content="/assets/images/fullres/updatedmodulardungeon.jpg">
+	<meta property="og:image:url" content="/assets/images/fullres/updatedmodulardungeon.jpg">
+</head>
+
+<div class="row">
+	<div class="column wide">
+
+		<a href="/assets/images/fullres/updatedmodulardungeon.jpg" data-lightbox="image-1" ><img class="indPackImg" src="/assets/images/fullres/updatedmodulardungeon.jpg" alt="" /></a>
+	</div>
+
+	<div class="column small info">
+
+		<div class="infoitem"><i class="fas fa-chess-rook fa-fw" ></i> Models<div class="text-right">48</div></div>
+		<div class="infoitem"><i class="fas fa-angle-double-right fa-fw" ></i> Animated<div class="text-right">No</div></div>
+		<div class="infoitem"><i class="fas fa-paint-roller fa-fw" ></i> Textured<div class="text-right">No</div></div>
+		<div class="infoitem"><i class="fas fa-cube fa-fw" ></i> Formats<div class="text-right">FBX, OBJ, Blend</div></div>
+		<div class="infoitem"><i class="fas fa-copy fa-fw" ></i> License<div class="text-right"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" >CC0</a></div></div>
+		<div class="infoitem"><i class="far fa-calendar-check fa-fw" ></i> Released<div class="text-right">April 2019</div></div>
+		<div class="infoitem"><i class="fas fa-tag fa-fw" ></i> Tags
+      
+                    <div class="tags">Modular</div>
+      
+      
+                      <div class="tags">Dungeon</div>
+      
+      
+    </div>
+			 	<button class="btn download"    onclick=" window.open('https://drive.google.com/drive/folders/1CvofJVYHf00StUTsIWtOuyVxeV0CN3UI','_blank')" >Download <i class="fas fa-angle-down" ></i></button>
+	</div>
+
+
+</div>
+<div class="row description">
+	<div class="column support ">
+
+		<button class="btn patreonBtn"   onClick="window.open('https://www.patreon.com/quaternius','_blank')"; >Support on Patreon
+			  <i class="fas fa-heart"></i>
+		</button>
+
+		<div class="menu-text-center">If you like the models consider supporting!</div>
+	</div>
+		<div class="column wide">
+						<div class="indPackTitle">Modular Dungeons Pack</div>
+
+						<div class="indPackText">
+							This pack includes a set of modular dungeon assets. All in FBX, OBJ and Blend formats, free to use in personal and commercial projects.
+						</div>
+	</div>
+</div>
+<script src="/assets/js/lightbox.min.js"></script>
+
+      <footer>
+        <a class="float-left" target="_blank" href="https://www.twitter.com/quaternius">	&copy; Quaternius</a>
+        <a class="float-right" >laulhet@gmail.com</a>
+	</footer>
+
+  </div>
+</body>
+</html>
