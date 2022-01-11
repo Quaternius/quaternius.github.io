@@ -71,7 +71,15 @@ function setValue(tag) {
 	function showAll(){
 		 $('.pack').show();
 	}
-
+	function openTutorial(number) {
+		console.log(number);
+  var x = document.getElementById(number);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 	</script>
 
@@ -82,6 +90,7 @@ function setValue(tag) {
      	<div class="nav-menu">
 						<div class="navButtons" id ="navButtons-id">
                <button class="btn"   onClick="window.location='/index.html'"; ><i class="fas fa-chess-rook" ></i> Assets</button>
+							 <button class="btn"   onClick="window.location='/tutorials.html'"; ><i class="fas fa-book" ></i> Tutorials</button>
               <button class="btn"  onClick="window.location='/portfolio.html'"; ><i class="fas fa-frog"></i> Portfolio</button>
                <button class="btn"  onClick="window.location='/patrons.html'"; ><i class="fas fa-heart"></i> Patrons</button>
 
@@ -152,6 +161,7 @@ function setValue(tag) {
                       <div class="tags">Modular</div>
       
       
+                      <div class="tags">Character</div>
       
     </div>
 			 	<button class="btn download"    onclick=" window.open('https://drive.google.com/drive/folders/1NDZn_aGnn0vfFV3M22Y8GPcDjO8BVcLs?usp=sharing','_blank')" >Download <i class="fas fa-angle-down" ></i></button>
