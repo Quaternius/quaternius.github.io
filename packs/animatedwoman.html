@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -7,8 +8,8 @@
   	<link rel="stylesheet" href="/assets/css/style_new.css">
     <link rel="shortcut icon" href="/assets/images/site/favicon.ico" />
     <link rel="stylesheet" href="/assets/css/lightbox.min.css">
-
-
+    <link rel="stylesheet" href="/assets/css/lity.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/f9d695b775.js" crossorigin="anonymous"></script>
@@ -89,14 +90,18 @@ function setValue(tag) {
 			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
      	<div class="nav-menu">
 						<div class="navButtons" id ="navButtons-id">
-               <button class="btn"   onClick="window.location='/index.html'"; ><i class="fas fa-chess-rook" ></i> Assets</button>
-							 <button class="btn"   onClick="window.location='/tutorials.html'"; ><i class="fas fa-book" ></i> Tutorials</button>
-              <button class="btn"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><i class="fas fa-frog"></i> Portfolio</button>
-               <button class="btn"  onClick="window.location='/patrons.html'"; ><i class="fas fa-heart"></i> Patrons</button>
-
+               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><i class="fas fa-chess-rook" ></i></div> Assets</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><i class="fas fa-book" ></i></div> Tutorials</button>
+              <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><i class="fas navicon fa-frog"></i></div> Portfolio</button>
+              
 							 </div>
-							 <button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><i class="fab fa-twitter-square"></i></button>
-			</div>
+<div class="socials">
+<button class="btn twitter"  onclick=" window.open('https://discord.gg/hXB2qTTEnJ','_blank')" ><div class="joinDiscord">Join on Discord</div><img src="/assets/svg/discord.svg" class="iconBig"></button>
+				<button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><img src="/assets/svg/square-twitter.svg" class="iconBig"></button>
+
+
+			</div></div>
+
             <a href="/index.html"><img src ="/assets/images/site/logo.png" class ="logo"/></a>
 </header>
 
@@ -143,50 +148,188 @@ function setValue(tag) {
 	<div class="column wide">
 
 		<a href="/assets/images/fullres/animatedwoman.jpg" data-lightbox="image-1" ><img class="indPackImg" src="/assets/images/fullres/animatedwoman.jpg" alt="" /></a>
+
+<div class="titleContainer">
+			<div class="indPackTitle">Animated Woman Pack</div>
+
+				<div class="titleDate"><i class="far fa-calendar-check fa-fw" ></i>December 2017</div>
 	</div>
+
+</div>
 
 	<div class="column small info">
 
+		<a href="/assets/images/fullres/animatedwoman2.jpg" data-lightbox="image-1"><img class="smallPackImg" src="/assets/images/fullres/animatedwoman2.jpg" alt="" /></a>
+
 		<div class="infoitem"><i class="fas fa-chess-rook fa-fw" ></i> Models<div class="text-right">2</div></div>
-		<div class="infoitem"><i class="fas fa-angle-double-right fa-fw" ></i> Animated<div class="text-right">Yes</div></div>
-		<div class="infoitem"><i class="fas fa-paint-roller fa-fw" ></i> Textured<div class="text-right">Yes</div></div>
-		<div class="infoitem"><i class="fas fa-cube fa-fw" ></i> Formats<div class="text-right">FBX, OBJ, Blend</div></div>
+		<div class="infoitem"><i class="fas fa-angle-double-right fa-fw" ></i> Animated<div class="text-right">
+			
+	  <img src="/assets/svg/check-solid.svg" class="icon">
+			</div></div>
+
+
+		<div class="infoitem"><i class="fas fa-paint-roller fa-fw" ></i> Textured<div class="text-right">	
+	  <img src="/assets/svg/check-solid.svg" class="icon">
+			</div></div>
+
+
+
+
+
+		<div class="infoitem"><i class="fas fa-cube fa-fw" ></i> Formats
+			<div class="text-right tags">FBX</div>
+			<div class="text-right tags">OBJ</div>
+			<div class="text-right tags">Blend</div>
+			
+
+
+		</div>
 		<div class="infoitem"><i class="fas fa-copy fa-fw" ></i> License<div class="text-right"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" >CC0</a></div></div>
-		<div class="infoitem"><i class="far fa-calendar-check fa-fw" ></i> Released<div class="text-right">December 2017</div></div>
-		<div class="infoitem"><i class="fas fa-tag fa-fw" ></i> Tags
-      
-                    <div class="tags">Human</div>
-      
-      
-                      <div class="tags">Animated</div>
-      
-      
-                      <div class="tags">Characters</div>
-      
-    </div>
-			 	<button class="btn download"    onclick=" window.open('https://drive.google.com/drive/folders/1M2jkG2WLiteK81Pj_v0QjCJoUTf2gCjp?usp=sharing','_blank'); ga('send', 'event', 'Packs', 'Download', 'Animated Woman Pack');"" >Download <i class="fas fa-angle-down" ></i></button>
+
+
+
+<div class="centerDownload">
+
+
+</div>
+
+
+<div id="inline" class="lity-hide">
+<div id="donationTitle"> Consider supporting me !</div>
+
+<div id="donationText"> These assets are possible thanks to lovely people like you that support me through Patreon. </div>
+<div id="donationText" style="font-weight:600;padding-bottom:20px;"> Help me continue making free stuff for everyone.</div>
+
+<div class="cardContainer">
+
+	<div class="donationCard">
+		<img src="/assets/svg/dollarhand.svg" class="iconCard"><div class="cardTitle">One Time Donation</div>
+			<div class="cardText">
+				Keep the content accessible to all with a one-time donation on Itch.io.
+			</div>
+
+				<button class="cardButton" onclick="window.open('https://quaternius.itch.io/donation','_blank');">Donate <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
+
+	</div>
+
+
+<div class="donationCard">
+
+	<img src="/assets/svg/patreon.svg" class="iconCard"><div class="cardTitle">Support on Patreon</div>
+		<div class="cardText">
+			Join the Patreon community!    <br> Unlock 1-on-1 lessons, all the packs in one file and custom models.
+			</div>
+
+			<button class="cardButton" onclick="window.open('https://www.patreon.com/quaternius','_blank');">Support <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
+
+</div>
+
+
+
+		<div class="donationCard">
+			<img src="/assets/svg/discord.svg" class="iconCard"><div class="cardTitle">Join the Discord</div>
+				<div class="cardText">
+					Don't miss out on new releases!<br> Receive notifications and sneak peeks of upcoming packs.
+				</div>
+
+					<button class="cardButton" onclick="window.open('https://discord.gg/hXB2qTTEnJ','_blank');">Join <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
+
+			</div>
+
+</div>
+
+
+<div class="buttonHolders">
+
+<br>
+<div id="donationText"> Otherwise you can <a href="https://drive.google.com/drive/folders/1M2jkG2WLiteK81Pj_v0QjCJoUTf2gCjp?usp=sharing" class ="DownloadLink" target="_blank">continue to the download</a>.</div>
+<br><br><br><br>
+
+
+
+</div>
+
+
+	</div>
 	</div>
 
 
 </div>
 <div class="row description">
-	<div class="column support ">
 
-		<button class="btn patreonBtn"   onClick="window.open('https://www.patreon.com/quaternius','_blank')"; >Support on Patreon
-			  <i class="fas fa-heart"></i>
-		</button>
-
-		<div class="menu-text-center">If you like the models consider supporting!</div>
-	</div>
 		<div class="column wide">
-						<div class="indPackTitle">Animated Woman Pack</div>
+
 
 						<div class="indPackText">
 							This pack contains an atlas textured female with many animations. In FBX, OBJ and Blend formats, free to use in personal and commercial projects.
 						</div>
+
+
+
 	</div>
+	<div class="column support">
+		<div class="madePossible">Made possible by Patreon supporters </div>
+
+
+		<a href="#inline" class="btn download" id="button1" data-lity>Download <i class="fas fa-angle-down"></i></a>
+		<!-- Displayed when hasDonated is true -->
+		<button class="btn download" id="button2" onclick="window.open('https://drive.google.com/drive/folders/1M2jkG2WLiteK81Pj_v0QjCJoUTf2gCjp?usp=sharing','_blank');">Download <i class="fas fa-angle-down"></i></button>
+
+
+
+
+
+
+
+
+</div>
 </div>
 <script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/lity.min.js"></script>
+<script>
+
+	document.addEventListener('DOMContentLoaded', function() {
+       // Check if the checkbox state is stored in localStorage
+       const isChecked = localStorage.getItem('checkboxState') === 'true';
+
+       // Set the checkbox state based on the localStorage value
+       //document.getElementById('myCheckbox').checked = isChecked;
+
+
+
+       // Show/hide the buttons based on the checkbox state
+       const button1 = document.getElementById('button1');
+       const button2 = document.getElementById('button2');
+
+       button1.style.display = isChecked ? 'none' : 'inline-block';
+       button2.style.display = isChecked ? 'inline-block' : 'none';
+
+       // Add a change event listener to the checkbox
+      // document.getElementById('myCheckbox').addEventListener('change', function() {
+         // Update the localStorage with the checkbox state
+        // localStorage.setItem('checkboxState', this.checked);
+
+         // Show/hide the message based on the checkbox state
+
+         // Show/hide the buttons based on the checkbox state
+        // button1.style.display = this.checked ? 'block' : 'none';
+        // button2.style.display = this.checked ? 'none' : 'block';
+       //});
+     });
+
+  document.getElementById('download').addEventListener('click', function() {
+    this.blur();
+  });
+
+	lightbox.option({
+	      'fadeDuration': 0,
+	      'resizeDuration': 0
+	    })
+
+
+
+
+</script>
 
       <footer>
         <a class="float-left" target="_blank" href="https://www.twitter.com/quaternius">	&copy; Quaternius</a>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -7,8 +8,8 @@
   	<link rel="stylesheet" href="/assets/css/style_new.css">
     <link rel="shortcut icon" href="/assets/images/site/favicon.ico" />
     <link rel="stylesheet" href="/assets/css/lightbox.min.css">
-
-
+    <link rel="stylesheet" href="/assets/css/lity.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/f9d695b775.js" crossorigin="anonymous"></script>
@@ -89,14 +90,18 @@ function setValue(tag) {
 			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
      	<div class="nav-menu">
 						<div class="navButtons" id ="navButtons-id">
-               <button class="btn"   onClick="window.location='/index.html'"; ><i class="fas fa-chess-rook" ></i> Assets</button>
-							 <button class="btn"   onClick="window.location='/tutorials.html'"; ><i class="fas fa-book" ></i> Tutorials</button>
-              <button class="btn"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><i class="fas fa-frog"></i> Portfolio</button>
-               <button class="btn"  onClick="window.location='/patrons.html'"; ><i class="fas fa-heart"></i> Patrons</button>
-
+               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><i class="fas fa-chess-rook" ></i></div> Assets</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><i class="fas fa-book" ></i></div> Tutorials</button>
+              <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><i class="fas navicon fa-frog"></i></div> Portfolio</button>
+              
 							 </div>
-							 <button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><i class="fab fa-twitter-square"></i></button>
-			</div>
+<div class="socials">
+<button class="btn twitter"  onclick=" window.open('https://discord.gg/hXB2qTTEnJ','_blank')" ><div class="joinDiscord">Join on Discord</div><img src="/assets/svg/discord.svg" class="iconBig"></button>
+				<button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><img src="/assets/svg/square-twitter.svg" class="iconBig"></button>
+
+
+			</div></div>
+
             <a href="/index.html"><img src ="/assets/images/site/logo.png" class ="logo"/></a>
 </header>
 
