@@ -97,7 +97,8 @@ function setValue(tag) {
 
 							 </div>
 <div class="socials">
-<button class="btn twitter"  onclick=" window.open('https://discord.gg/hXB2qTTEnJ','_blank')" ><div class="joinDiscord">Join on Discord</div><img src="/assets/svg/discord.svg" class="iconBig"></button>
+<button class="btn twitter"  onclick=" window.open('https://discord.gg/hXB2qTTEnJ','_blank')" ><div class="joinDiscord"><img src="/assets/svg/discord.svg" class="iconBig"> Join on Discord</div></button>
+
 				<button class="btn twitter"  onclick=" window.open('https://twitter.com/quaternius','_blank')" ><img src="/assets/svg/square-twitter.svg" class="iconBig"></button>
 
 
@@ -147,46 +148,54 @@ function setValue(tag) {
 
 
 <div class="faqWrap" style="border-top:solid #2C2C2C;">
-<button class="faqTitle"  onclick="openTutorial('1')">● Can these assets be used in commercial projects?  <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle"  onclick="openTutorial('0')">● Can I suggest <b>ideas for packs?</b>  <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<div id="0" class="faqContent" style="display:none;margin:auto;"  border="0">
+Yes, you can submit pack ideas. The ones I like the most will be available for voting on the <a href="https://discord.gg/hXB2qTTEnJ"  target="_blank">Discord server</a>.<br>
+Patreon supporters' ideas are <b>prioritized</b>, though it is <b>not a requirement</b> to be a supporter for your idea to be selected.<br>
+<button class="btn packidea"  onclick=" window.open('https://forms.gle/cERojw3QKCuff3BA9','_blank')" ><div class="joinDiscord"><img src="/assets/svg/submission-form.svg" class="iconBig"> Submit a pack idea</div></button>
+</div></div>
+
+<div class="faqWrap" >
+<button class="faqTitle"  onclick="openTutorial('1')">● Can these assets be used in <b>commercial projects?</b>  <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="1" class="faqContent" style="display:none;margin:auto;"  border="0">
 <b>Yes</b>, these assets can be used <b>for free</b> without the need for attribution in <b>commercial, educational, and personal projects</b>.<br>
-All models are under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 License.</a>
+All models are under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 License.</a>
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('2')">● What is the best way to stay informed about new releases? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('2')">● What is the best way to stay informed about <b>new releases?</b> <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="2" class="faqContent" style="display:none;margin:auto;"  border="0">
-You can join the <a href="https://discord.gg/hXB2qTTEnJ">Discord server</a> or follow me on <a href="https://x.com/quaternius">Twitter</a> to receive notifications about future releases.
+You can join the <a href="https://discord.gg/hXB2qTTEnJ" target="_blank">Discord server</a> or follow me on <a href="https://x.com/quaternius"  target="_blank">Twitter</a> to receive notifications about future releases.
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('3')">● Am I allowed to modify the models? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('3')">● Am I allowed to <b>modify</b> the models? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="3" class="faqContent" style="display:none;margin:auto;"  border="0">
 <b>Yes</b>, you are free to modify the models in any way you like, including combining them with other asset packs.
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('4')">● Are the models textured? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('4')">● Are the models <b>textured?</b> <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="4" class="faqContent" style="display:none;margin:auto;"  border="0">
 This depends on the pack. Most packs are textured using an <b>Atlas Texture</b>, where a single image with colored squares is used to optimize performance.<br>
 Some packs may use individual materials instead which are also convenient for color variations.
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('5')">● Do you offer services for custom asset creation? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('5')">● Do you offer services for <b>custom asset</b> creation? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="5" class="faqContent" style="display:none;margin:auto;"  border="0">
-Yes, you can request custom assets through my <a href="https://www.patreon.com/quaternius">Patreon</a> page.
+Yes, you can request custom assets through my <a href="https://www.patreon.com/quaternius" target="_blank">Patreon</a> page.
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('6')">● Is it necessary to give credit when using these assets? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('6')">● Is it necessary to give <b>credi</b>t when using these assets? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="6" class="faqContent" style="display:none;margin:auto;"  border="0">
 No, attribution is not necessary. However, <b>credit is always appreciated</b>.
-These assets are licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, allowing you to use them without giving credit, even for commercial purposes.
+These assets are licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/"  target="_blank">CC0</a>, allowing you to use them without giving credit, even for commercial purposes.
 </div></div>
 
 <div class="faqWrap">
-<button class="faqTitle" onclick="openTutorial('7')">● Which software can be used to edit these assets? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
+<button class="faqTitle" onclick="openTutorial('7')">● Which <b>software</b> can be used to edit these assets? <img src="/assets/svg/arrow-down.svg" class="icon-faq"></button>
 <div id="7" class="faqContent" style="display:none;margin:auto;"  border="0">
 You can edit these models using <b>Blender</b>, which is available for free. You can open the <b>.blend</b> files directly or import the <b>FBX</b> files.
 </div></div>

@@ -1049,6 +1049,15 @@ border:0px !important;
     color : #5515AA;
 }
 
+.packidea{
+margin-top:5px;
+padding:3px 7px 5px 7px;
+font-size:1.8rem;
+border-radius: 5px;
+height: 100%;
+border:0px !important;
+}
+
 .socials{
 
   text-align: right;
