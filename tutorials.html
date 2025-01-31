@@ -87,13 +87,14 @@ function setValue(tag) {
   <div class="container">
 
       <header>
-			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
+			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <img src="/assets/svg/bars.svg" class="iconBig"></button>
      	<div class="nav-menu">
 						<div class="navButtons" id ="navButtons-id">
-               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><i class="fas fa-chess-rook" ></i></div> Assets</button>
-							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><i class="fas fa-book" ></i></div> Tutorials</button>
-              <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><i class="fas navicon fa-frog"></i></div> Portfolio</button>
-							<button class="btn btnNavBar"   onClick="window.location='/faq.html'"; ><div class="navicon"><i class="fa fa-question" ></i></div> FAQ</button>
+               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><img src="/assets/svg/rook.svg" class="iconBig"></div> Assets</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><img src="/assets/svg/book.svg" class="iconBig"></div> Tutorials</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/faq.html'"; ><div class="navicon"><img src="/assets/svg/question.svg" class="iconBig"></div> FAQ</button>
+						  <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><img src="/assets/svg/frog.svg" class="iconBig"></div> Portfolio</button>
+
 
 							 </div>
 <div class="socials">
@@ -149,429 +150,375 @@ function setValue(tag) {
 	
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('1')"   style="background-image: url('/assets/images/tutorials/28_bg.png') ; ""><b>28</b> Sculpted Wood Trim sheet</button>
+			<button class="tutorial" onclick="toggleTutorial('1')" style="background-image: url('/assets/images/tutorials/28_bg.png') ; "><b>28</b> Sculpted Wood Trim sheet</button>
 		</div>
-		<div id="1" style="display:none;margin:auto;"  border="0">
-
+		<div id="1" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/28_WoodTrimsheet.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/28_WoodTrimsheet.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('2')"   style="background-image: url('/assets/images/tutorials/27_bg.png') ; ""><b>27</b> UV Mapping Basics</button>
+			<button class="tutorial" onclick="toggleTutorial('2')" style="background-image: url('/assets/images/tutorials/27_bg.png') ; "><b>27</b> UV Mapping Basics</button>
 		</div>
-		<div id="2" style="display:none;margin:auto;"  border="0">
-
+		<div id="2" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/27_UVMappingBasics.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/27_UVMappingBasics.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('3')"   style="background-image: url('/assets/images/tutorials/26_bg.png') ; ""><b>26</b> Cel Shader for Blender</button>
+			<button class="tutorial" onclick="toggleTutorial('3')" style="background-image: url('/assets/images/tutorials/26_bg.png') ; "><b>26</b> Cel Shader for Blender</button>
 		</div>
-		<div id="3" style="display:none;margin:auto;"  border="0">
-
+		<div id="3" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/26_CelShader.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/26_CelShader.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('4')"   style="background-image: url('/assets/images/tutorials/25_bg.png') ; ""><b>25</b> Simple Toon Human pt.1</button>
+			<button class="tutorial" onclick="toggleTutorial('4')" style="background-image: url('/assets/images/tutorials/25_bg.png') ; "><b>25</b> Simple Toon Human pt.1</button>
 		</div>
-		<div id="4" style="display:none;margin:auto;"  border="0">
-
+		<div id="4" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/25_SimpleToonHuman.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/25_SimpleToonHuman.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('5')"   style="background-image: url('/assets/images/tutorials/24_bg.png') ; ""><b>24</b> Wiggle Bones Addon</button>
+			<button class="tutorial" onclick="toggleTutorial('5')" style="background-image: url('/assets/images/tutorials/24_bg.png') ; "><b>24</b> Wiggle Bones Addon</button>
 		</div>
-		<div id="5" style="display:none;margin:auto;"  border="0">
-
+		<div id="5" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/24_WiggleBones.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/24_WiggleBones.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('6')"   style="background-image: url('/assets/images/tutorials/23_bg.png') ; ""><b>23</b> Simple Walk Animation</button>
+			<button class="tutorial" onclick="toggleTutorial('6')" style="background-image: url('/assets/images/tutorials/23_bg.png') ; "><b>23</b> Simple Walk Animation</button>
 		</div>
-		<div id="6" style="display:none;margin:auto;"  border="0">
-
+		<div id="6" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/23_walkanimation.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/23_walkanimation.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('7')"   style="background-image: url('/assets/images/tutorials/22_bg.png') ; ""><b>22</b> Blendshapes pt.2</button>
+			<button class="tutorial" onclick="toggleTutorial('7')" style="background-image: url('/assets/images/tutorials/22_bg.png') ; "><b>22</b> Blendshapes pt.2</button>
 		</div>
-		<div id="7" style="display:none;margin:auto;"  border="0">
-
+		<div id="7" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/22_blendshaperigging.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/22_blendshaperigging.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('8')"   style="background-image: url('/assets/images/tutorials/21_bg.png') ; ""><b>21</b> Blendshapes pt.1</button>
+			<button class="tutorial" onclick="toggleTutorial('8')" style="background-image: url('/assets/images/tutorials/21_bg.png') ; "><b>21</b> Blendshapes pt.1</button>
 		</div>
-		<div id="8" style="display:none;margin:auto;"  border="0">
-
+		<div id="8" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/21_blendshapes.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/21_blendshapes.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('9')"   style="background-image: url('/assets/images/tutorials/20_bg.png') ; ""><b>20</b> Easiest Tree Ever</button>
+			<button class="tutorial" onclick="toggleTutorial('9')" style="background-image: url('/assets/images/tutorials/20_bg.png') ; "><b>20</b> Easiest Tree Ever</button>
 		</div>
-		<div id="9" style="display:none;margin:auto;"  border="0">
-
+		<div id="9" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/20_easiesttree.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/20_easiesttree.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('10')"   style="background-image: url('/assets/images/tutorials/19_bg.png') ; ""><b>19</b> Atlas Texturing</button>
+			<button class="tutorial" onclick="toggleTutorial('10')" style="background-image: url('/assets/images/tutorials/19_bg.png') ; "><b>19</b> Atlas Texturing</button>
 		</div>
-		<div id="10" style="display:none;margin:auto;"  border="0">
-
+		<div id="10" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/19_atlastexturing.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/19_atlastexturing.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('11')"   style="background-image: url('/assets/images/tutorials/18_bg.png') ; ""><b>18</b> Rocks without modeling</button>
+			<button class="tutorial" onclick="toggleTutorial('11')" style="background-image: url('/assets/images/tutorials/18_bg.png') ; "><b>18</b> Rocks without modeling</button>
 		</div>
-		<div id="11" style="display:none;margin:auto;"  border="0">
-
+		<div id="11" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/18_cellfracture.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/18_cellfracture.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('12')"   style="background-image: url('/assets/images/tutorials/17_bg.png') ; ""><b>17</b> Character from Base</button>
+			<button class="tutorial" onclick="toggleTutorial('12')" style="background-image: url('/assets/images/tutorials/17_bg.png') ; "><b>17</b> Character from Base</button>
 		</div>
-		<div id="12" style="display:none;margin:auto;"  border="0">
-
+		<div id="12" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/17_charfrombase.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/17_charfrombase.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('13')"   style="background-image: url('/assets/images/tutorials/16_bg.png') ; ""><b>16</b> Animation Basics</button>
+			<button class="tutorial" onclick="toggleTutorial('13')" style="background-image: url('/assets/images/tutorials/16_bg.png') ; "><b>16</b> Animation Basics</button>
 		</div>
-		<div id="13" style="display:none;margin:auto;"  border="0">
-
+		<div id="13" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/16_idle.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/16_idle.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('14')"   style="background-image: url('/assets/images/tutorials/15_bg.png') ; ""><b>15</b> Retopology</button>
+			<button class="tutorial" onclick="toggleTutorial('14')" style="background-image: url('/assets/images/tutorials/15_bg.png') ; "><b>15</b> Retopology</button>
 		</div>
-		<div id="14" style="display:none;margin:auto;"  border="0">
-
+		<div id="14" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/15_retopology.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/15_retopology.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('15')"   style="background-image: url('/assets/images/tutorials/14_bg.png') ; ""><b>14</b> Anime Head</button>
+			<button class="tutorial" onclick="toggleTutorial('15')" style="background-image: url('/assets/images/tutorials/14_bg.png') ; "><b>14</b> Anime Head</button>
 		</div>
-		<div id="15" style="display:none;margin:auto;"  border="0">
-
+		<div id="15" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/14_AnimeHead.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/14_AnimeHead.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('16')"   style="background-image: url('/assets/images/tutorials/13_bg.png') ; ""><b>13</b> Run Animation</button>
+			<button class="tutorial" onclick="toggleTutorial('16')" style="background-image: url('/assets/images/tutorials/13_bg.png') ; "><b>13</b> Run Animation</button>
 		</div>
-		<div id="16" style="display:none;margin:auto;"  border="0">
-
+		<div id="16" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/13_RunAnimation.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/13_RunAnimation.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('17')"   style="background-image: url('/assets/images/tutorials/12_bg.png') ; ""><b>12</b> Rigging Objects</button>
+			<button class="tutorial" onclick="toggleTutorial('17')" style="background-image: url('/assets/images/tutorials/12_bg.png') ; "><b>12</b> Rigging Objects</button>
 		</div>
-		<div id="17" style="display:none;margin:auto;"  border="0">
-
+		<div id="17" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/12_riggingobjects.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/12_riggingobjects.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('18')"   style="background-image: url('/assets/images/tutorials/11_bg.png')  ,url('/assets/images/tutorials/patreon.png'); ""><b>11</b> Medieval House</button>
+			<button class="tutorial" onclick="toggleTutorial('18')" style="background-image: url('/assets/images/tutorials/11_bg.png')  ,url('/assets/images/tutorials/patreon.png'); "><b>11</b> Medieval House</button>
 		</div>
-		<div id="18" style="display:none;margin:auto;"  border="0">
-
+		<div id="18" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-<button class="btn download"   style="border-top-left-radius:0px;border-bottom-right-radius:0px;" onclick=" window.open('https://www.patreon.com/posts/tutorial-house-65440113','_blank');" >View on Patreon <i class="fas fa-heart" ></i></button>
-
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/11_MedievalHouse.mp4" type="video/mp4">
-			Your browser does not support the videos.
+				<button class="btn download" style="border-top-left-radius:0px;border-bottom-right-radius:0px;" onclick="window.open('https://www.patreon.com/posts/tutorial-house-65440113','_blank');">View on Patreon <img src="/assets/svg/heart.svg" class="iconBig"></button>
+			
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/11_MedievalHouse.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('19')"   style="background-image: url('/assets/images/tutorials/10_bg.png') ; ""><b>10</b> Easy Inverse Kinematics</button>
+			<button class="tutorial" onclick="toggleTutorial('19')" style="background-image: url('/assets/images/tutorials/10_bg.png') ; "><b>10</b> Easy Inverse Kinematics</button>
 		</div>
-		<div id="19" style="display:none;margin:auto;"  border="0">
-
+		<div id="19" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/10_EasyIk.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/10_EasyIk.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('20')"   style="background-image: url('/assets/images/tutorials/9_bg.png') ; ""><b>9</b> Anime Hair</button>
+			<button class="tutorial" onclick="toggleTutorial('20')" style="background-image: url('/assets/images/tutorials/9_bg.png') ; "><b>9</b> Anime Hair</button>
 		</div>
-		<div id="20" style="display:none;margin:auto;"  border="0">
-
+		<div id="20" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/9_Femalehair.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/9_Femalehair.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('21')"   style="background-image: url('/assets/images/tutorials/8_bg.png') ; ""><b>8</b> Character Rigging</button>
+			<button class="tutorial" onclick="toggleTutorial('21')" style="background-image: url('/assets/images/tutorials/8_bg.png') ; "><b>8</b> Character Rigging</button>
 		</div>
-		<div id="21" style="display:none;margin:auto;"  border="0">
-
+		<div id="21" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/8_Rigging.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/8_Rigging.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('22')"   style="background-image: url('/assets/images/tutorials/7_bg.png') ; ""><b>7</b> Character Palettes</button>
+			<button class="tutorial" onclick="toggleTutorial('22')" style="background-image: url('/assets/images/tutorials/7_bg.png') ; "><b>7</b> Character Palettes</button>
 		</div>
-		<div id="22" style="display:none;margin:auto;"  border="0">
-
+		<div id="22" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/7_CharacterPalette.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/7_CharacterPalette.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('23')"   style="background-image: url('/assets/images/tutorials/6_bg.png') ; ""><b>6</b> Outlines</button>
+			<button class="tutorial" onclick="toggleTutorial('23')" style="background-image: url('/assets/images/tutorials/6_bg.png') ; "><b>6</b> Outlines</button>
 		</div>
-		<div id="23" style="display:none;margin:auto;"  border="0">
-
+		<div id="23" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/6_Outline.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/6_Outline.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('24')"   style="background-image: url('/assets/images/tutorials/5_bg.png') ; ""><b>5</b> Hair</button>
+			<button class="tutorial" onclick="toggleTutorial('24')" style="background-image: url('/assets/images/tutorials/5_bg.png') ; "><b>5</b> Hair</button>
 		</div>
-		<div id="24" style="display:none;margin:auto;"  border="0">
-
+		<div id="24" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/5_Hair.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/5_Hair.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('25')"   style="background-image: url('/assets/images/tutorials/4_bg.png') ; ""><b>4</b> Stylized Trees</button>
+			<button class="tutorial" onclick="toggleTutorial('25')" style="background-image: url('/assets/images/tutorials/4_bg.png') ; "><b>4</b> Stylized Trees</button>
 		</div>
-		<div id="25" style="display:none;margin:auto;"  border="0">
-
+		<div id="25" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/4_stylizedtrees.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/4_stylizedtrees.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('26')"   style="background-image: url('/assets/images/tutorials/3_bg.png') ; ""><b>3</b> Selection Hotkeys</button>
+			<button class="tutorial" onclick="toggleTutorial('26')" style="background-image: url('/assets/images/tutorials/3_bg.png') ; "><b>3</b> Selection Hotkeys</button>
 		</div>
-		<div id="26" style="display:none;margin:auto;"  border="0">
-
+		<div id="26" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/3_SelectionHotkeys.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/3_SelectionHotkeys.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('27')"   style="background-image: url('/assets/images/tutorials/2_bg.png') ; ""><b>2</b> Gradient Texturing</button>
+			<button class="tutorial" onclick="toggleTutorial('27')" style="background-image: url('/assets/images/tutorials/2_bg.png') ; "><b>2</b> Gradient Texturing</button>
 		</div>
-		<div id="27" style="display:none;margin:auto;"  border="0">
-
+		<div id="27" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/2_GradientTexturing.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/2_GradientTexturing.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
 		
-
 		<div class="tutorialTitle">
-			<button class="tutorial" onclick="openTutorial('28')"   style="background-image: url('/assets/images/tutorials/1_bg.png') ; ""><b>1</b> Animation</button>
+			<button class="tutorial" onclick="toggleTutorial('28')" style="background-image: url('/assets/images/tutorials/1_bg.png') ; "><b>1</b> Animation</button>
 		</div>
-		<div id="28" style="display:none;margin:auto;"  border="0">
-
+		<div id="28" class="tutorial-content" style="display:none;margin:auto;" border="0">
 			
-
-			<video width="80%" class="video" autoplay controls loop preload>
-			  <source src="/assets/images/tutorials/1_Animation.mp4" type="video/mp4">
-			Your browser does not support the videos.
+			<video width="80%" class="video" controls>
+				<source data-src="/assets/images/tutorials/1_Animation.mp4" type="video/mp4">
+				Your browser does not support the videos.
 			</video>
-			</div>
+		</div>
 	
-
 </div>
+
+<script>
+function toggleTutorial(number) {
+    const selectedContent = document.getElementById(number);
+    const video = selectedContent.querySelector('video');
+
+    // If the clicked tutorial is already open, close it
+    if (selectedContent.style.display === 'block') {
+        selectedContent.style.display = 'none';
+        video.pause();
+        video.removeAttribute('src');
+        video.load();
+        return;
+    }
+
+    // Hide all tutorial contents
+    document.querySelectorAll('.tutorial-content').forEach(content => {
+        content.style.display = 'none';
+        const contentVideo = content.querySelector('video');
+        contentVideo.pause();
+        contentVideo.removeAttribute('src');
+        contentVideo.load();
+    });
+
+    // Show selected tutorial content and load its video
+    selectedContent.style.display = 'block';
+    const source = video.querySelector('source');
+    video.src = source.getAttribute('data-src');
+    video.load();
+}
+</script>
 
       <footer>
         <a class="float-left" target="_blank" href="https://www.twitter.com/quaternius">	&copy; Quaternius</a>

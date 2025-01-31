@@ -87,13 +87,14 @@ function setValue(tag) {
   <div class="container">
 
       <header>
-			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <i class="fa fa-bars"></i></button>
+			<button class="btnHamb hamburger" id="hamburger" onclick="responsiveHamburger()"> <img src="/assets/svg/bars.svg" class="iconBig"></button>
      	<div class="nav-menu">
 						<div class="navButtons" id ="navButtons-id">
-               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><i class="fas fa-chess-rook" ></i></div> Assets</button>
-							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><i class="fas fa-book" ></i></div> Tutorials</button>
-              <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><i class="fas navicon fa-frog"></i></div> Portfolio</button>
-							<button class="btn btnNavBar"   onClick="window.location='/faq.html'"; ><div class="navicon"><i class="fa fa-question" ></i></div> FAQ</button>
+               <button class="btn btnNavBar"   onClick="window.location='/index.html'"; ><div class="navicon"><img src="/assets/svg/rook.svg" class="iconBig"></div> Assets</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/tutorials.html'"; ><div class="navicon"><img src="/assets/svg/book.svg" class="iconBig"></div> Tutorials</button>
+							 <button class="btn btnNavBar"   onClick="window.location='/faq.html'"; ><div class="navicon"><img src="/assets/svg/question.svg" class="iconBig"></div> FAQ</button>
+						  <button class="btn btnNavBar"  onclick=" window.open('https://www.artstation.com/quaternius','_blank')"; ><div class="navicon"><img src="/assets/svg/frog.svg" class="iconBig"></div> Portfolio</button>
+
 
 							 </div>
 <div class="socials">
@@ -149,28 +150,30 @@ function setValue(tag) {
 <div class="row">
 	<div class="column wide">
 
+
 		<a href="/assets/images/fullres/zombie.jpg" data-lightbox="image-1" ><img class="indPackImg" src="/assets/images/fullres/zombie.jpg" alt="" /></a>
-
+		
 <div class="titleContainer">
-			<div class="indPackTitle">Animated Zombie Pack</div>
 
-				<div class="titleDate"><i class="far fa-calendar-check fa-fw" ></i>January 2018</div>
 	</div>
 
 </div>
 
 	<div class="column small info">
 
+
 		<a href="/assets/images/fullres/zombie2.jpg" data-lightbox="image-1"><img class="smallPackImg" src="/assets/images/fullres/zombie2.jpg" alt="" /></a>
 
-		<div class="infoitem"><i class="fas fa-chess-rook fa-fw" ></i> Models<div class="text-right">2</div></div>
-		<div class="infoitem"><i class="fas fa-angle-double-right fa-fw" ></i> Animated<div class="text-right">
+
+
+		<div class="infoitem"><img src="/assets/svg/models.svg" class="iconBig"> Models<div class="text-right">2</div></div>
+		<div class="infoitem"><img src="/assets/svg/animated.svg" class="iconBig"> Animated<div class="text-right">
 			
 	  <img src="/assets/svg/check-solid.svg" class="icon">
 			</div></div>
 
 
-		<div class="infoitem"><i class="fas fa-paint-roller fa-fw" ></i> Textured<div class="text-right">	
+		<div class="infoitem"><img src="/assets/svg/textured.svg" class="iconBig"> Textured<div class="text-right">	
 	  <img src="/assets/svg/check-solid.svg" class="icon">
 			</div></div>
 
@@ -178,7 +181,7 @@ function setValue(tag) {
 
 
 
-		<div class="infoitem"><i class="fas fa-cube fa-fw" ></i> Formats
+		<div class="infoitem"><img src="/assets/svg/formats.svg" class="iconBig"> Formats
 			<div class="text-right tags">FBX</div>
 			<div class="text-right tags">OBJ</div>
 			<div class="text-right tags">Blend</div>
@@ -186,14 +189,10 @@ function setValue(tag) {
 
 
 		</div>
-		<div class="infoitem"><i class="fas fa-copy fa-fw" ></i> License<div class="text-right"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" >CC0</a></div></div>
+		<div class="infoitem"><img src="/assets/svg/license.svg" class="iconBig"> License<div class="text-right"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" >CC0</a></div></div>
 
 
 
-<div class="centerDownload">
-
-
-</div>
 
 
 <div id="inline" class="lity-hide">
@@ -204,76 +203,92 @@ function setValue(tag) {
 
 <div class="cardContainer">
 
+	<div class="donationCardSingle donationCard">
 
+		<img src="/assets/svg/patreon.svg" class="iconCard"><div class="cardTitle">Support on Patreon</div>
+			<div class="cardText">
+				Unlock the <b>Source</b> and <b>Pro</b> versions of each pack, <b>all the packs in one file</b> and exclusive models made <b>just for you</b>.
+				</div>
 
+				<button class="cardButton" onclick="window.open('https://www.patreon.com/quaternius','_blank');">Support <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
 
-<div class="donationCard">
+	</div>
 
-	<img src="/assets/svg/patreon.svg" class="iconCard"><div class="cardTitle">Support on Patreon</div>
-		<div class="cardText">
-			Join the Patreon community!    <br> Unlock 1-on-1 lessons, all the packs in one file and custom models.
-			</div>
-
-			<button class="cardButton" onclick="window.open('https://www.patreon.com/quaternius','_blank');">Support <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
-
-</div>
-
-
-
-		<div class="donationCard">
+	<div class="donationCardSingle donationCard">
 			<img src="/assets/svg/discord.svg" class="iconCard"><div class="cardTitle">Join the Discord</div>
 				<div class="cardText">
-					Don't miss out on new releases!<br> Receive notifications and sneak peeks of upcoming packs.
+					Don't miss out on new releases!<br> Receive notifications and sneak peeks of <b>upcoming packs</b>.
 				</div>
 
 					<button class="cardButton" onclick="window.open('https://discord.gg/hXB2qTTEnJ','_blank');">Join <img src="/assets/svg/arrow-right-grey.svg" class="icon"></button>
+	</div>
 
-			</div>
+
+	<div class="donationCardSingle donationCard">
+		<img src="/assets/svg/download-solid.svg" class="iconCard"><div class="cardTitle">Just give me the Download</div>
+
+
+	<button class="cardButton" onclick="window.open('https://drive.google.com/drive/folders/1AfOPRgr5Gl8gll9KfGDEUSYq_Ag7yPJG?usp=sharing','_blank');">Download  <img src="/assets/svg/download-dark.svg" class="iconBig"></button>
+
+
 
 </div>
 
 
-<div class="buttonHolders">
 
-<br>
-<div id="donationText"> Otherwise you can <a href="https://drive.google.com/drive/folders/1AfOPRgr5Gl8gll9KfGDEUSYq_Ag7yPJG?usp=sharing" class ="DownloadLink" target="_blank">continue to the download</a>.</div>
-<br><br><br><br>
-
-
-
+</div>
 </div>
 
 
-	</div>
-	</div>
-
-
+</div>
 </div>
 <div class="row description">
 
 		<div class="column wide">
 
+			<div style="background-color: #ee3a23; color:#f4edec;" class="indPackTitle">Animated Zombie Pack  <div class="titleDate" style=" color:#f4edec;"><i class="far fa-calendar-check fa-fw" ></i>January 2018</div></div>
 
 						<div class="indPackText">
 							This pack contains an atlas textured zombie with many animations. In FBX, OBJ and Blend formats, free to use in personal and commercial projects.
 						</div>
+						
+
+
+
+
+
+
+
+
 
 
 
 	</div>
 	<div class="column support">
+
+		
+
+
 		<div class="madePossible">Made possible by Patreon supporters </div>
 
 
-		<a href="#inline" class="btn download" id="button1" data-lity>Download <i class="fas fa-angle-down"></i></a>
+		<a href="#inline" class="btnDownload download" id="button1" data-lity>Download  <img src="/assets/svg/download.svg" class="iconBig"></a>
+
 		<!-- Displayed when hasDonated is true -->
-		<button class="btn download" id="button2" onclick="window.open('https://drive.google.com/drive/folders/1AfOPRgr5Gl8gll9KfGDEUSYq_Ag7yPJG?usp=sharing','_blank');">Download <i class="fas fa-angle-down"></i></button>
+		
+		<button class="btnDownload download" id="button2" onclick="window.open('https://drive.google.com/drive/folders/1AfOPRgr5Gl8gll9KfGDEUSYq_Ag7yPJG?usp=sharing','_blank');">Download<img src="/assets/svg/download.svg" class="iconBig"></button>
+		
+
 
 
 
 
 
 </div>
+
+
+
+
 </div>
 <script src="/assets/js/lightbox.min.js"></script>
 <script src="/assets/js/lity.min.js"></script>
@@ -294,7 +309,7 @@ function setValue(tag) {
 
        button1.style.display = isChecked ? 'none' : 'inline-block';
        button2.style.display = isChecked ? 'inline-block' : 'none';
-
+			 button3.style.display = isChecked ? 'inline-block' : 'none';
        // Add a change event listener to the checkbox
       // document.getElementById('myCheckbox').addEventListener('change', function() {
          // Update the localStorage with the checkbox state
@@ -320,6 +335,26 @@ function setValue(tag) {
 
 
 
+</script>
+
+<script type="text/javascript" src="https://static.itch.io/api.js"></script>
+<script type="text/javascript">
+  function attachButtons() {
+    const buttons = ["buy_button", "button3"];
+
+    buttons.forEach(buttonId => {
+      const button = document.getElementById(buttonId);
+      if (button) {
+        Itch.attachBuyButton(button, {
+          user: "quaternius",
+          game: ""
+        });
+      }
+    });
+  }
+
+  // Run the function after the page loads
+  document.addEventListener("DOMContentLoaded", attachButtons);
 </script>
 
       <footer>

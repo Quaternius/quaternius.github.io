@@ -31,8 +31,6 @@
 }
 .faqTitle {
   font-family: 'Poppins', sans-serif;
-
-
   display: inline-block;
   font-weight: 300;
   color: whitesmoke;
@@ -99,9 +97,27 @@ border-bottom: 3px solid #bfbfbf;
 border-top: 1px solid #bfbfbf;
 
 }
+.youtubePlayerContainer{
+  position: relative;
+     width: 100%;
+     height: 0;
+     padding-bottom: 56.25%;
+}
+
+.youtubePlayer{
+  position: absolute;
+     top: 0;
+     left: 0;
+     width: 95%;
+     height: 95%;
+     border-radius: 5px;
+     margin: 15px;
+}
+
 
 .indPackImg {
   width: 95%;
+
   border-radius: 5px;
   margin: 15px;
   box-shadow: 0px 3px 6px #BFBFBF;
@@ -110,46 +126,154 @@ border-top: 1px solid #bfbfbf;
 .smallPackImg {
 width: 100%;
   border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: 0px 3px 3px #BFBFBF;
+margin-bottom: 5px;
+  -webkit-box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
+  box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
 }
 
-.indPackImg:hover,
-.smallPackImg:hover {
-outline: 1px solid black;
+.sourceprostandard {
+width: 100%;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
+  box-shadow: -6px 6px 4px 0px rgba(0,0,0,0.14);
+}
 
+
+
+.prices {
+  width: 95%;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column; /* Back to column layout */
+
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+ border-radius: 10px;
+  -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+}
+
+.featuresContainer{
+  width: 95%;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column; /* Back to column layout */
+
+
+  margin-bottom: 20px;
+ border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+
+}
+
+
+/* New class for image container */
+.pricesImageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.pricesImg {
+  width: auto;
+  height: 70px;
+  object-fit: contain;
+  object-position: left;
+  margin-left: 0;
+
+}
+
+.pricesPriceImg {
+  height: 70px;
+  object-fit: contain;
+  object-position: right;
+  margin-right: 20px;
+}
+
+.pricesText {
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 470;
+  width: 100%;
+  opacity: 0.8;
+}
+.engineText {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 470;
+  width: 100%;
+  opacity: 0.8;
 }
 .indPackText{
-  padding-top: 6px;
-  padding-bottom: 6px;
+line-height: 1.5;
+text-align: left;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-bottom: 25px;
   padding-left: 6px;
+  padding-right: 6px;
   font-size:18px;
   font-weight: 470;
 }
-
+.featuresText{
+text-align: left;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  font-size:18px;
+  font-weight: 470;
+}
+.singleFeature{
+  margin-top: 7px;
+  padding: 10px;
+  width: 95%;
+  border-bottom: 1px solid #bfbfbf;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
 .indPackTitle{
+  width: 95%;
   font-family: 'Poppins', sans-serif;
       font-size: 30px;
     line-height: 1.25em;
     font-weight: bold;
 
   text-align: left;
-  color:#545454;
-  padding-top: 0px;
-  margin-left:15px;
- padding-right: 15px;
+  color:#ffffff;
+
+  border-radius: 4px;
+  padding: 5px 5px 5px 20px;
+  opacity: 0.8;
+
+  -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.1);
 
 }
-
 .titleDate{
-
+  color: #f5f5f5;
+padding-left: 5px;
+display: inline-block;
+position: relative;
 font-size:18px;
-font-weight: 470;
+font-weight: 650;
+opacity: 0.7;
 flex: 3; /* This allows the boxes to share the available space equally */
   box-sizing: border-box;
-  font-weight: 500;
-padding-top: 8px;
-opacity: 0.8;
+  font-weight: 800;
+
 
 
 }
@@ -187,16 +311,11 @@ float: left;
 }
 
 .support{
-
   width: 33.33%;
   text-align: center;
 }
 
-
-
-
 .info{
-
 border-radius: 0px 0px 5px 5px;
 }
 .infoitem{
@@ -216,13 +335,19 @@ font-weight: 470;
   padding-bottom:5px;
 }
 @media screen and (max-width: 900px) {
-
+  .smallPackImg{
+    display: none;
+  }
+  .youtubePlayerContainer{
+    margin-bottom:15px;
+  }
   .small {
     width: 100%;
     padding: 0px 15px 15px 10px ;
   }
   .wide {
     width: 100%;
+
   }
   .support {
     width: 100%;
@@ -230,7 +355,7 @@ font-weight: 470;
 }
 .row{
   background-color: #d9d9d9;
-padding-bottom: 15px;
+
 }
 
 .row:after{
@@ -298,6 +423,8 @@ padding-bottom: 15px;
 }
 
 
+
+
 .PackText{
 font-size: 16px;
 font-weight: 500;
@@ -334,7 +461,7 @@ user-select: none; /* Standard */
 font-size: 15px;
 font-weight: 400;
 display: inline;
-background-color: red;
+background-color: #e75745;
 color: white;
 border-radius: 5px;
 margin-left: 2px;
@@ -364,7 +491,7 @@ user-select: none; /* Standard */
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: red;
+  background-color: #e75745;
   z-index: 1;
   border-radius: 10px;
 }
@@ -399,11 +526,7 @@ display: grid;
   justify-items: center;
   margin: 0 auto;
   padding: 0;
-
-
-
 }
-
 
 .centerDownload{
   text-align: center;
@@ -418,7 +541,7 @@ display: grid;
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #363636;
+  border: 3px solid #4b1378;
   border-left: none;
   padding: 5px;
   outline: none;
@@ -434,7 +557,7 @@ display: grid;
   width: 40px;
   height: 36px;
   border: 1px solid #363636;
-  background: #363636;
+  background: #4b1378;
   text-align: center;
   color: #fff;
   font-size: 18px;
@@ -485,9 +608,8 @@ display: grid;
 
 .btn, .btnHamb {
 
-
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   color: whitesmoke;
   text-align: center;
   vertical-align: middle;
@@ -495,7 +617,7 @@ display: grid;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #404040;
+  background-color: #7b78bf;
   border: 1px solid transparent;
   padding:  0.75rem;
   font-size: 1rem;
@@ -506,8 +628,22 @@ display: grid;
 
 }
 
+.cardButtonContainer{
+  padding: 10px;
+  width:280px;
+    background-color: #7b78bf;
+    color: #f4edec;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 16px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
-.cardButton{
+}
+
+.cardDownloadButtons{
   display: inline-block;
   font-weight: 600;
   color: #4A4A4A;
@@ -524,17 +660,44 @@ display: grid;
   border-bottom: 2px solid #303030;
 
   border-radius: 0.3em;
-    width: 70%;
-    position: absolute;
+
+
       bottom: 0;
       margin-bottom: 15px;
+
+}
+
+.cardDownloadButtons:hover{
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.9rem;
+  background-color: #FBE50B;
+  color:black;
+}
+
+
+
+
+.cardButton{
+ margin-top: auto;
+  width: 100%;
+   font-weight: 600;
+   color: #4A4A4A;
+   text-align: center;
+   background-color: whitesmoke;
+   border-radius: 0.3em;
+   border-bottom: 2px solid #303030;
+   padding: 0.75rem;
+   font-size: 1rem;
+   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+   margin-bottom: 15px;
 
 }
 
 .cardButton:hover{
   font-weight: 700;
   font-size: 1.1rem;
-  padding: 0.9rem;
+
   background-color: #FBE50B;
   color:black;
 }
@@ -567,46 +730,56 @@ text-align: center;
 }
 
 .download {
-background:linear-gradient(0deg, #404040 0%, #404040 100%);
-border-radius: 0.3em;
-  width: 80%;
-color:white !important;
 
+border: none;
+background:linear-gradient(0deg, #ee3a23 0%, #ee3a23 100%);
+border-radius: 0.3em;
+  width: 95%;
+color:white !important;
+padding-top: 10px;
+padding-bottom: 10px;
 
     font-weight: 520;
     font-size: 20px;
-    height: 50px;
-
-
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
       -webkit-transition-property: transform;
       transition-property: transform;
       -webkit-transition-timing-function: ease-out;
-      border-bottom: 2px solid #303030;
-      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3) !important;
-}
+      /*border-bottom: 2px solid #303030;
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3) !important;*/
 
-.patreonexclusive{
-  margin-top:5px;
-  background:linear-gradient(0deg, #5515AA 0%, #5515AA 100%);
-  border-radius: 0.3em;
-    width: 80%;
-  color:white !important;
-      height: 50px;
+      margin-bottom: 15px;
+        -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
 
-
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-timing-function: ease-out;
-        border-bottom: 2px solid #303030;
-        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3) !important;
 
 }
 
+.patreonbutton{
+  background:linear-gradient(0deg, #4b1278 0%, #4b1278 100%);
+}
 
+.patreonbutton:hover{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+text-decoration: none;
+  text-decoration:none;
+}
+
+#patreonBanner{
+border-radius: 5px 5px 0 0;
+color:white;
+background-color: #7b78bf;
+font-size: 20px;
+line-height: 20px;
+
+padding-top: 10px;
+}
 
 .icon{
   font-style: italic;
@@ -643,6 +816,7 @@ color:white !important;
 }
 
 .madePossible{
+
 font-style: italic;
 -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -686,21 +860,30 @@ font-style: italic;
     text-align: center;
 }
 
+.donationCardSingle {
+  width: 100%;
+  max-width: 280px; /* Keeps it from being too large */
+  min-height: 350px; /* Prevents shrinking too much */
+  display: flex;
+  flex-direction: column; /* Ensures proper layout */
+  margin-bottom: 20px;
+}
+
 .donationCard{
-width:280px;
-  background-color: #404040;
+  background-color: #7b78bf;
+  color: #f4edec;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 padding: 16px;
 border-radius: 10px;
 position: relative;
 
-
-
 -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+
+
 .donationCard a{
   position: absolute;
        width: 100%;
@@ -714,32 +897,37 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 
+
+
+
+.donationCardDouble .cardButton {
+  flex: 1;  /* Makes each button take up equal space */
+}
+
 .donationCard:hover{
-  background-color: #4a4a4a;
+
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
 
-  outline: 1px solid black;
+  outline: 1px solid white;
 
 }
 
 
 
-.cardContainer{
-
-
-  display: flex; /* Change display to flex */
-  justify-content: center; /* Center contents horizontally */
-  align-items: center;
-  gap: 20px; /* gap is the shorthand for grid-gap */
-  position: relative;
-  z-index: 1;
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center;
+  align-items: stretch; /* Makes all cards the same height */
+  gap: 20px;
+  padding-bottom: 100px;
 }
 
 .cardTitle{
   font-family: 'Poppins', sans-serif;
       font-size: 22px;
-    line-height: 2em;
+    line-height: 1.2em;
     color:white;
     text-align: left;
 
@@ -751,7 +939,9 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   font-size: 14px;
   color:white;
   text-align: left;
-  margin-bottom:60px;
+   flex-grow: 1;
+  margin-bottom:20px;
+  line-height: 1.5em;
 
 }
 
@@ -826,32 +1016,45 @@ position: relative;
 }
 
 
+/* Darker background on mouse-over */
+.btnDownload:hover {
+  background:linear-gradient(0deg, #7b78bf 0%, #7b78bf 100%);
+text-decoration: none;
+  text-decoration:none;
+font-size:24px:
+
+}
 
 
 /* Darker background on mouse-over */
 .btn:hover {
-
-
-
-
   background:linear-gradient(0deg, #FBE50B 0%, #FBE50B 100%);
-  border-color: #FBE50B;
 text-decoration: none;
   color : #404040 !important;
   text-decoration:none;
 font-size:24px:
 
-
 }
-
+.download:focus{
+  text-decoration: none;
+    text-decoration:none;
+}
 .download:hover{
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
-border-bottom: 2px solid #303030;
-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3) !important;
+  -webkit-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: -4px 4px 2px 0px rgba(0,0,0,0.2);
+text-decoration: none;
+  text-decoration:none;
 }
 .btn:visited{
   color:#404040;
+}
+
+.download:visited{
+  text-decoration: none;
+    text-decoration:none;
 }
 
 .btnNavBar{
@@ -1012,7 +1215,7 @@ margin: 0 auto;
 }
 
 .nav-menu{
- background-color: #404040;
+ background-color: #7b78bf;
     width:100%;
 
 
@@ -1069,8 +1272,8 @@ border:0px !important;
 .joinDiscord{
 font-size: 22px;
 display: inline;
-padding-right: 10px;
-font-weight: 400;
+
+font-weight: 600;
 vertical-align: middle;
 font-size: 1rem;
 }
