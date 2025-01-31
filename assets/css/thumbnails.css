@@ -357,7 +357,14 @@ font-weight: 470;
   background-color: #d9d9d9;
 
 }
-
+@media (max-width: 450px) {
+    .viewtag{
+        display: none!important;
+    }
+    .PackText{
+      padding-bottom: 3px;
+    }
+}
 .row:after{
   content: "";
   display: table;
