@@ -1207,6 +1207,13 @@ background-color: #b8b8b8;
   font-size: 20px;
 }
 
+.license{
+  text-align: left;
+  padding:25px;
+  background-color: #D9D9D9;
+  font-size: 20px;
+}
+
 .tutorialWrap{
 background-color: #3A3A3A;
   font-size: 20px;
@@ -1263,6 +1270,21 @@ border:0px !important;
 }
 
 .twitter:hover{
+
+    background:#FBE50B;
+
+    color : #5515AA;
+}
+
+.licensebtn{
+padding:0 7px 0 7px;
+font-size:16px;
+
+height: 100%;
+border:0px !important;
+}
+
+.licensebtn:hover{
 
     background:#FBE50B;
 
